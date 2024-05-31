@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_theme_dark_onSecondary">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="20dp"
+
+            android:fontFamily="@font/roboto_bold"
+            android:padding="10dp"
+            android:text="Название"
+            android:textAlignment="center"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="98dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="13dp"
+
+            android:layout_marginEnd="101dp"
+            android:fontFamily="@font/roboto_bold"
+            android:padding="10dp"
+            android:text="Дата"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hero"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/roboto_thin"
+            android:padding="10dp"
+            android:text="Описание"
+            android:textSize="18sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/watchlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="56dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/md_theme_dark_secondary"
+            android:text="Добавить в список"
+            android:textColor="@color/md_theme_light_background"
+            android:textSize="18sp"
+            app:icon="@android:drawable/ic_menu_save"
+            app:iconGravity="end"
+            app:iconTint="@color/md_theme_light_background"
+
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hero"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="199dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="20dp"
+
+            android:background="@color/design_default_color_error"
+            app:cardCornerRadius="30dp">
+
+            <ImageView
+                android:id="@+id/heroimage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@color/design_default_color_error" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</ScrollView>
